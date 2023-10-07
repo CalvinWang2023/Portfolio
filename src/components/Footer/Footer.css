@@ -1,0 +1,7 @@
+.footer {
+    background-image: url("../../assets//pattern-hills.svg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    min-height: 100vh;
+    background-size: 100%;
+}

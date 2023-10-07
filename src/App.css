@@ -4,7 +4,6 @@
     background-position: top left;
     background-repeat: repeat;
     position: relative;
-    z-index: -999;
     animation: scrolling-stars 30s linear infinite;
     animation-direction: alternate;
 }
