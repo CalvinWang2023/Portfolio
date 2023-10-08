@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
 
 *,
 ::after,
@@ -6,11 +6,11 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: 'Merriweather', serif;
+	font-family: 'Space Grotesk', sans-serif;
 }
 
 :root {
-
+	
 }
 
 
@@ -24,10 +24,10 @@ body {
 	overflow-x: hidden;
 }
 
-/* button {
+button {
 	border: none;
     border-radius: 12px;
-    padding: 0.6rem 1.2rem;
+    padding: 1.2rem;
     font-size: 1.2rem;
     width: 100%;
 	--webkit-user-select: none;
@@ -36,6 +36,4 @@ body {
     cursor: pointer;
 }
 
-ul {
-	list-style: none;
-} */
+

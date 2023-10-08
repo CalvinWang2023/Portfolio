@@ -4,15 +4,13 @@
     align-items: center;
     justify-content: space-between;
 
-    margin-top: 30px;
-    padding-bottom: 25px;
-    border-bottom: .8px solid red;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: .8px solid #fb6087;
 }
 
 .navbar-desktop .site-icon {
-    color: red;
-    text-transform: uppercase;
-    font-family: red;
+    color: #fb6087;
     margin-left: 40px;
     letter-spacing: 1.2px;
 }
@@ -33,9 +31,7 @@
     justify-content: space-between;
     width: 50%;
 
-    margin-right: 40px;
-
-    
+    margin-right: 40px;    
 }
 
 .navbar-desktop .menu-list .planet {
@@ -48,7 +44,7 @@
 .navbar-desktop .menu-list .planet .hl {
     position: absolute;
     width: 0%;
-    top: -42px;
+    top: -20px;
     transition: all .7s;
     height: 5.5px;
 }
@@ -58,16 +54,15 @@
 }
 
 .navbar-desktop .menu-list .planet #planet-clicked {
-    color: red;
+    color: #fb6087;
 }
 
 .navbar-desktop .menu-list .planet button {
     background: transparent;
     border: none;
     font-size: 1rem;
-    color: red;
+    color: #fb6087;
     text-transform: uppercase;
-    font-family: sans-serif;
     font-weight: 700;
     letter-spacing: 1.2px;
 
@@ -80,7 +75,7 @@
 }
 
 .navbar-desktop .menu-list .planet:hover button {
-    color: red;
+    color: #fb6087;
 }
 
 @media (max-width: 1200px) {
@@ -95,7 +90,7 @@
     }
 
     .navbar-desktop .menu-list .planet .hl {
-        top: 243%;
+        top: 128%;
         height: 4px;
     }
 } 

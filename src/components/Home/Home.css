@@ -1,0 +1,148 @@
+.Home-container {
+    margin: 5rem;
+}
+
+.Home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.Home .title #first {
+    color: white;
+    font-size: 2rem;
+    border: 2px #fb6087 solid;
+    border-radius: 2.5rem;
+    border-bottom-left-radius: 0;
+    padding: 1rem 1.5rem;
+    width: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 2rem;
+}
+
+.Home .title #second {
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 6rem;
+}
+
+.Home .title span {
+    color: #fb6087;
+    border-bottom: 2px #fb6087 solid;
+}
+
+.Home .title #third {
+    color: #fb6087;
+    font-size: 3rem;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    width: 35%;
+}
+.buttons button {
+    border: 2px #fb6087 solid;
+    background-color: transparent;
+    color: white;
+    font-weight: 700;
+    transition: 0.7s;
+}
+.buttons button:hover {
+    background-color: #fb6087;
+}
+
+
+.intro {
+    margin-top: 12rem;
+}
+
+.intro .title {
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 1rem;
+}
+.intro span {
+    color: #fb6087;
+}
+.intro .desc {
+    display: flex;
+    align-items: center;
+}
+.intro .desc .desc-text {
+    font-size: 1.5rem;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.avatar {
+    height: 20%;
+    width: 30%;
+}
+
+
+
+.cursor {
+    display: inline-block;
+    width: 0.1em;
+    /* Adjust the width of the cursor */
+    height: 0.8em;
+    /* Adjust the height of the cursor */
+    background-color: #fb6087;
+    /* Cursor color */
+    margin-left: 0.2em;
+    /* Adjust the distance between the cursor and text */
+}
+
+.cursor {
+    animation: blinkCursor .8s infinite;
+    /* Adjust cursor blink speed */
+}
+
+@keyframes blinkCursor {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.homeIcon {
+    width: 40%;
+    height: 40%;
+    margin-right: 2rem;
+}
+
+/* In your Home.css file */
+@keyframes typeText {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes deleteText {
+    0% {
+        width: 100%;
+    }
+
+    100% {
+        width: 0;
+    }
+}

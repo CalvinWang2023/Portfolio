@@ -18,13 +18,14 @@
 }
 
 ::-webkit-scrollbar {
-    max-width: 0.625rem;
+    max-width: 0.425rem;
 }
 
 ::-webkit-scrollbar-track {
-    background-color: var(--color-black);
+    background-color: #2d1950;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #2D68F0;
+    background-color: #fb6087;
+    border-radius: 12px;
 }
