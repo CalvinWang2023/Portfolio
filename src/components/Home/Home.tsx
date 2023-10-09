@@ -2,6 +2,10 @@ import { useState, useEffect } from 'react';
 import './Home.css';
 import homeIcon from '../../assets/Home_Icon.png';
 import avatar from '../../assets/avatar.png';
+import {
+    AiFillGithub,
+    AiFillLinkedin,
+} from "react-icons/ai";
 
 const Home = () => {
 	const textArray = ["Web Developer...", "Open Source Contributor...", "Computer Science Student..."];
@@ -53,7 +57,8 @@ const Home = () => {
 				</div>
 				<img src={homeIcon} alt="" className="homeIcon" />
 			</div>
-			<div className="buttons">
+
+			<div className="buttons-container">
 				<button className="projects">
 					View my work
 				</button>
@@ -61,19 +66,39 @@ const Home = () => {
 					Contact Me
 				</button>
 			</div>
-			<div className="intro">
-				<p className='title'>Hey, Nice to <span>MEET</span> you!</p>
+
+			<div className="intro-container">
+				<img src={ avatar } alt="" className='avatar' />
 				<div className="desc">
-					<div className="desc-text">
-						<p>I'm a third year university student <span>passionate</span> about everything in <span>Web Development</span>!</p>
-						<p>I have learnt something classics like <span>Typescript</span>, <span>C#</span>...</p>
-						<p>I hope to practice and solidify my knowledge through a precious opportunity of <span>Internship</span>!</p>
-					</div>
-					<img src={ avatar } alt="" className='avatar' />
+					<p className='title'>Hey, Nice to <span>MEET</span> you!</p>
+					<p>I'm a third year university student <span>passionate</span> about everything in <span>Web Development</span>!</p>
+					<p>I have learnt something classics like <span>Typescript</span>, <span>C#</span>...</p>
+					<p>I hope to practice and solidify my knowledge through a precious opportunity of <span>Internship</span>!</p>
+				</div>	
+			</div>
+			<div className="contact-container">
+				<div className="title">
+					<span className="left-divider"></span>
+					<p className="title-text">&lt; Contact Me &#47;&gt;</p>
+					<span className="right-divider"></span>
+				</div>
+				<div className="desc">
+					<p>Wanna say <span>Hello</span> to me?</p> 
+					<p>Feel free to <span>connect</span> with me!</p>
+				</div>
+				<div className="contact-button">
+					<a href="mailto:wang146@mcmaster.ca">Hello!</a>
+				</div>
+				<div className="logos-container">
+					<a href="https://github.com/CalvinWang2023" target='_blank' className='github'>
+						<AiFillGithub />
+					</a>
+					<a href="https://www.linkedin.com/in/calvin-wang-736433289/" target='_blank' className='linkedin'>
+						<AiFillLinkedin />
+					</a>
 				</div>
 			</div>
 		</div>
-
 	);
 };
 
