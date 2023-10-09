@@ -18,7 +18,7 @@
     transform: translateX(-50%);
     color: white;
 }
-.logo-container {
+.footer-container .logo-container {
     position: absolute;
     bottom: 2%;
     right: 3%;
@@ -27,12 +27,12 @@
     gap: 2rem;
     margin-left: 2rem;
 }
-.logo-container :is(svg) {
+.footer-container .logo-container :is(svg) {
     color: white;
     transition: 0.3s;
     height: 2rem;
     width: 2rem;
 }
-.logo-container :is(svg):hover {
+.footer-container .logo-container :is(svg):hover {
     color: rgb(117, 163, 216);
 }
