@@ -1,8 +1,12 @@
+import Hero from "./components/Hero";
+import './About.css';
+import Techset from "./components/Techset";
+
 const About = () => {
     return (
         <div className="about-container">
-            <h1 className="title">About <span>ME</span></h1>
-            
+            <Hero />
+            <Techset />
         </div>
     );
 }

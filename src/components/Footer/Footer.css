@@ -4,24 +4,25 @@
     background-position: center bottom;
     min-height: 15rem;
     background-size: 100%;
+    position: relative;
 }
 .text-container {
     position: absolute;
-    bottom: 2%;
-    left: 3%;
+    bottom: 15%;
+    left: 5%;
     color: white;
 }
 .copyright-container {
     position: absolute;
-    bottom: 2%;
+    bottom: 15%;
     left: 50%;
     transform: translateX(-50%);
     color: white;
 }
 .footer-container .logo-container {
     position: absolute;
-    bottom: 2%;
-    right: 3%;
+    bottom: 15%;
+    right: 5%;
     display: flex;
     align-items: center;
     gap: 2rem;

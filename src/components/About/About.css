@@ -1,0 +1,70 @@
+.about-container {
+    margin: 7rem 6rem;
+}
+
+.aboutHeroIcon {
+    height: 45%;
+    width: 45%;
+}
+
+.about-container .hero-container .title {
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 3rem;
+}
+.about-container .hero-container span {
+    color: #fb6087;
+}
+.about-container .hero-container .intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+.about-container .hero-container .intro-text {
+    color: white;
+    font-weight: 500;
+    width: 50%;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+    line-height: 1.7rem;
+}
+
+.about-container .techset-container {
+    margin-top: 18rem;
+    margin-bottom: 18rem;
+}
+.about-container .techset-container .title {
+    font-size: 2rem;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+.about-container .techset-container span {
+    color: #fb6087;
+}
+.about-container .techset-container .techset {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.about-container .techset-container .techset .tech {
+    border: 1.5px rgb(168, 56, 168) solid;
+    box-shadow: 3px 3px 9px rgb(130, 25, 130);
+    border-radius: 12px;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    transition: 0.5s;
+}
+.about-container .techset-container .techset .tech:hover {
+    transform: scale(1.1);
+}
+.about-container .techset-container .techset .tech :is(svg) {
+    color: white;
+    width: 5rem;
+    height: 5rem;
+}
