@@ -5,7 +5,7 @@ import {
 
 const Contact = () => {
     return (
-        <div className="contact-container">
+        <div id='contact' className="contact-container">
             <div className="title">
                 <span className="left-divider"></span>
                 <p className="title-text">&lt; Contact Me &#47;&gt;</p>

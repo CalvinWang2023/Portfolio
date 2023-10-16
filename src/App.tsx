@@ -1,4 +1,4 @@
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, useLocation } from 'react-router-dom';
 import './App.css';
 import Layout from './Layout';
 import Home from './components/Home/Home';
@@ -7,8 +7,15 @@ import Resume from './components/Resume/Resume';
 import NavbarDesktop from './components/Navbar/NavbarDesktop/NavbarDesktop';
 import About from './components/About/About';
 import Footer from './components/Footer/Footer';
+import { useEffect } from 'react';
 
 function App() {
+	const location = useLocation();
+
+	useEffect(() => {
+		window.scrollTo(0, 0); // Scroll to the top when the location changes
+	}, [location]);
+  
 	return (
 		<div className="App">
 			<NavbarDesktop />

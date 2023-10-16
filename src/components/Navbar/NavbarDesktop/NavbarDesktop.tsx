@@ -1,5 +1,5 @@
 import './NavbarDesktop.css';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { useState } from 'react';
 
 const navigationItems = [
@@ -10,27 +10,36 @@ const navigationItems = [
 ];
 
 const NavbarDesktop = () => {
-	const [clicked, setClicked] = useState('0');
+	const location = useLocation();
+	const [scrolled, updateNavbar] = useState(false);
+
+	const activeItemId = navigationItems.find((item) => location.pathname === item.path)?.id || '0';
 
 	const linkStyle = { textDecoration: 'none' };
 
 	const hoverColor = { backgroundColor: '#fb6087' };
 
-	const handleItemClick = (id: string) => {
-		setClicked(id);
-	};
+	function scrollHandler() {
+		if (window.scrollY >= 20) {
+			updateNavbar(true);
+		} else {
+			updateNavbar(false);
+		}
+	}
+	
+	window.addEventListener("scroll", scrollHandler);
 
 	return (
-		<div className="navbar-desktop">
+		<div className={scrolled ? "nav-fixed navbar-desktop" : "navbar-desktop"}>
 			<div className="site-icon">
 				<h1>yanchun</h1>
 			</div>
 			<div className="menu-list">
 				{navigationItems.map((item) => (
 					<Link key={item.id} to={item.path} style={linkStyle}>
-						<div className="planet">
-							<div className={clicked === item.id ? 'hl clicked' : 'hl'} style={hoverColor}></div>
-							<button id={clicked === item.id ? 'planet-clicked' : ''} onClick={() => handleItemClick(item.id)}>
+						<div className="nav-option">
+							<div className={activeItemId === item.id ? 'hl clicked' : 'hl'} style={hoverColor}></div>
+							<button id={activeItemId === item.id ? 'button-clicked' : ''}>
 								{item.text}
 							</button>
 						</div>

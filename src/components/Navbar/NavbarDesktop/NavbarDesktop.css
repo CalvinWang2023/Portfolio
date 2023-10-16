@@ -1,12 +1,21 @@
 .navbar-desktop {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    background-color: transparent;
+    transition: 0.5s ease-in-out;
+}
 
-    margin-top: 20px;
-    padding-bottom: 20px;
-    border-bottom: .8px solid #fb6087;
+.nav-fixed {
+    background-color: #01051a45;
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.983);
 }
 
 .navbar-desktop .site-icon {
@@ -18,6 +27,7 @@
 .navbar-desktop .site-icon h1 {
     font-weight: 400;
     transition: .3s;
+    font-weight: 700;
 }
 
 .navbar-desktop .site-icon h1:hover {
@@ -31,33 +41,33 @@
     justify-content: space-between;
     width: 50%;
 
-    margin-right: 40px;    
+    margin-right: 40px;
 }
 
-.navbar-desktop .menu-list .planet {
+.navbar-desktop .menu-list .nav-option {
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
 }
 
-.navbar-desktop .menu-list .planet .hl {
+.navbar-desktop .menu-list .nav-option .hl {
     position: absolute;
     width: 0%;
-    top: -20px;
+    top: -9.5px;
     transition: all .7s;
     height: 5.5px;
 }
 
-.navbar-desktop .menu-list .planet .clicked {
+.navbar-desktop .menu-list .nav-option .clicked {
     width: 100%;
 }
 
-.navbar-desktop .menu-list .planet #planet-clicked {
+.navbar-desktop .menu-list .nav-option #button-clicked {
     color: #fb6087;
 }
 
-.navbar-desktop .menu-list .planet button {
+.navbar-desktop .menu-list .nav-option button {
     background: transparent;
     border: none;
     font-size: 1rem;
@@ -70,12 +80,8 @@
     cursor: pointer;
 }
 
-.navbar-desktop .menu-list .planet:hover .hl {
+.navbar-desktop .menu-list .nav-option:hover .hl {
     width: 100%;
-}
-
-.navbar-desktop .menu-list .planet:hover button {
-    color: #fb6087;
 }
 
 @media (max-width: 1200px) {
@@ -89,8 +95,8 @@
         margin-right: 0;
     }
 
-    .navbar-desktop .menu-list .planet .hl {
+    .navbar-desktop .menu-list .nav-option .hl {
         top: 128%;
         height: 4px;
     }
-} 
+}

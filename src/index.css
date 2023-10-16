@@ -29,10 +29,10 @@ button {
     border-radius: 12px;
     padding: 1.2rem;
     font-size: 1.2rem;
-    width: 100%;
 	--webkit-user-select: none;
 	text-transform: capitalize;
 	user-select: none;
+	text-align: center;
     cursor: pointer;
 }
 
