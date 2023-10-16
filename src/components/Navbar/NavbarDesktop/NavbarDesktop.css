@@ -20,14 +20,13 @@
 
 .navbar-desktop .site-icon {
     color: #fb6087;
-    margin-left: 40px;
-    letter-spacing: 1.2px;
+    letter-spacing: 1.2px;  
+    margin-left: 50px;
 }
 
 .navbar-desktop .site-icon h1 {
-    font-weight: 400;
     transition: .3s;
-    font-weight: 700;
+    font-weight: 400;
 }
 
 .navbar-desktop .site-icon h1:hover {
@@ -40,7 +39,6 @@
     align-items: center;
     justify-content: space-between;
     width: 50%;
-
     margin-right: 40px;
 }
 
@@ -60,7 +58,7 @@
 }
 
 .navbar-desktop .menu-list .nav-option .clicked {
-    width: 100%;
+    width: 80%;
 }
 
 .navbar-desktop .menu-list .nav-option #button-clicked {
@@ -81,22 +79,17 @@
 }
 
 .navbar-desktop .menu-list .nav-option:hover .hl {
-    width: 100%;
+    width: 80%;
 }
 
-@media (max-width: 1200px) {
-    .navbar-desktop {
-        flex-direction: column;
-        gap: 60px;
-    }
-
+@media (max-width: 800px) {
     .navbar-desktop .menu-list {
-        width: 90%;
-        margin-right: 0;
+        width: 60%;
     }
-
-    .navbar-desktop .menu-list .nav-option .hl {
-        top: 128%;
-        height: 4px;
+    .navbar-desktop .menu-list .nav-option button {
+        font-size: 0.9rem;
+    }
+    .navbar-desktop .site-icon h1 {
+        font-size: 1.8rem;
     }
 }

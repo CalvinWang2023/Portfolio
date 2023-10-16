@@ -1,11 +1,11 @@
 .home-container {
-    margin: 7rem 6rem;
+    margin: 7rem 3.5rem;
 }
 
 .home-container .hero-container {
     display: flex;
     justify-content: space-between;
-    align-items: center;   
+    align-items: center;  
 }
 .home-container .hero-container .title #first {
     color: white;
@@ -34,7 +34,7 @@
 }
 .home-container .hero-container .title #third {
     color: #fb6087;
-    font-size: 3rem;
+    font-size: 2.8rem;
 }
 .avatar {
     height: 20%;
@@ -220,7 +220,6 @@
 }
 
 
-
 .home-container .logo-container {
     display: flex;
     align-items: center;
@@ -235,4 +234,110 @@
 }
 .home-container .logo-container :is(svg):hover {
     color: rgb(117, 163, 216);
+}
+
+@media (max-width: 1300px) {
+    .home-container .hero-container .title #first {
+        font-size: 1.7rem;
+    }
+    .home-container .hero-container .title #second {
+        font-size: 2.5rem;
+    }
+    .home-container .hero-container .title #third {
+        font-size: 2.3rem;
+    }
+    .home-container .buttons-container button {
+        font-size: 1rem;
+    }
+    .home-container .intro-container .title {
+        font-size: 2.5rem;
+    }
+    .home-container .intro-container .desc {
+        font-size: 1.3rem;
+    }
+    .home-container .contact-container .title-text {
+        font-size: 2rem;
+    }
+    .home-container .contact-container .desc {
+        font-size: 1.5rem;
+    }
+    .home-container .contact-container .contact-button {
+        font-size: 1.6rem;
+    }
+    .home-container .logo-container :is(svg) {
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+}
+
+@media (max-width: 1100px) {
+    .home-container .hero-container .title #first {
+        font-size: 1.4rem;
+        padding: 10px;
+        width: 12rem;
+    }
+    .home-container .hero-container .title #second {
+        font-size: 2.2rem;
+    }
+    .home-container .hero-container .title #third {
+        font-size: 2rem;
+        margin-bottom: 4rem;
+    }
+
+    .home-container .intro-container .title {
+        font-size: 2.2rem;
+    }
+    .home-container .intro-container .desc {
+        font-size: 1.1rem;
+    }
+    .home-container .contact-container .title-text {
+        font-size: 1.7rem;
+    }
+    .home-container .contact-container .desc {
+        font-size: 1.2rem;
+    }
+    .home-container .contact-container .contact-button {
+        font-size: 1.3rem;
+    }
+    .home-container .logo-container :is(svg) {
+        height: 2.2rem;
+        width: 2.2rem;
+    }
+    .homeHeroIcon {
+        width: 36%;
+        height: 36%;
+    }
+}
+@media (max-width: 900px) {
+    .home-container .hero-container .title #first {
+        font-size: 1.2rem;
+        
+    }
+    .home-container .hero-container .title #second {
+        font-size: 2rem;
+    }
+    .home-container .hero-container .title #third {
+        font-size: 1.65rem;
+        margin-bottom: 4rem;
+    }
+    .home-container .buttons-container button {
+        padding: 1rem;
+        width: 170px;
+    }
+    .home-container .intro-container .title {
+        font-size: 2rem;
+    }
+    .home-container .intro-container .desc {
+        font-size: 1rem;
+    }
+    .home-container .contact-container .title-text {
+        font-size: 1.6rem;
+    }
+    .home-container .contact-container .desc {
+        font-size: 1.1rem;
+    }
+    .home-container .logo-container :is(svg) {
+        height: 2.1rem;
+        width: 2.1rem;
+    }
 }
