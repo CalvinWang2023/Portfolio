@@ -22,6 +22,7 @@
 .project-container .project-section {
     display: grid;
     grid-template-columns: auto auto auto;
+    place-content: center;
     row-gap: 8rem;
     column-gap: 2rem;
     color: white;
@@ -80,4 +81,22 @@
 .project-container .project-section .project .buttons :is(svg) {
     width: 28px;
     height: 28px;
+}
+
+@media (max-width: 1300px) {
+    .project-container .project-section {
+        grid-template-columns: auto auto;
+    }
+}
+@media (max-width: 900px) {
+    .project-container h1 {
+        margin: 7rem 0;
+        font-size: 2rem;
+    }
+    .project-container .project-section {
+        grid-template-columns: auto;
+    }
+    .project-container .project-section .project {
+        width: 370px;
+    }
 }
