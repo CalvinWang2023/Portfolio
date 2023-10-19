@@ -37,3 +37,35 @@
 .footer-container .logo-container :is(svg):hover {
     color: rgb(117, 163, 216);
 }
+
+@media (max-width: 950px) { 
+    .text-container, .copyright-container {
+        bottom: 10%;
+    }
+    .footer-container .logo-container {
+        bottom: 4%;
+        gap: 1.5rem;
+    }
+    .footer-container .logo-container :is(svg) {
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+}
+
+@media (max-width: 850px) {
+    .text-container, .copyright-container {
+        font-size: 0.6rem;
+        bottom: 5%;
+    }
+    .copyright-container {
+        left: 55%;
+    }
+    .footer-container .logo-container {
+        bottom: 2%;
+        gap: 1.2rem;
+    }
+    .footer-container .logo-container :is(svg) {
+        height: 1.3rem;
+        width: 1.3rem;
+    }
+}
