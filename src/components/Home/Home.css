@@ -76,7 +76,6 @@
     margin-right: 2rem;
 }
 
-/* In your Home.css file */
 @keyframes typeText {
     0% {
         width: 0;
@@ -219,7 +218,6 @@
     font-weight: 600;
 }
 
-
 .home-container .logo-container {
     display: flex;
     align-items: center;
@@ -311,7 +309,6 @@
 @media (max-width: 900px) {
     .home-container .hero-container .title #first {
         font-size: 1.2rem;
-        
     }
     .home-container .hero-container .title #second {
         font-size: 2rem;
@@ -339,5 +336,70 @@
     .home-container .logo-container :is(svg) {
         height: 2.1rem;
         width: 2.1rem;
+    }
+}
+
+@media (max-width: 850px) {
+    .home-container {
+        margin: 7rem 1.3rem;
+    }
+    .home-container .hero-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .home-container .hero-container .title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .home-container .hero-container .title #first {
+        font-size: 1.7rem;
+        padding: 0.6rem 1.5rem;
+        width: 15rem;
+    }
+    .home-container .hero-container .title #second {
+        font-size: 2.2rem;
+        margin-bottom: 5rem;
+    }
+    .home-container .hero-container .title #third {
+        font-size: 1.4rem;
+    }
+    .homeHeroIcon {
+        width: 70%;
+        height: 70%;
+    }
+    .home-container .buttons-container {
+        justify-content: center;
+        width: 100%;
+        margin-top: 3rem;
+    }
+    .home-container .intro-container {
+        flex-direction: column;
+    }
+    .home-container .intro-container .title {
+        font-size: 2.2rem;
+        text-align: center;
+    }
+    .home-container .intro-container .desc {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    .home-container .intro-container img {
+        height: 50%;
+        width: 50%;
+    }
+    .home-container .contact-container .title-text {
+        font-size: 1.2rem;
+    }
+    .home-container .contact-container .desc {
+        font-size: 1.3rem;
+    }
+    .home-container .contact-container .contact-button {
+        font-size: 1.3rem;
+        width: 50%;
+    }
+    .home-container .logo-container :is(svg) {
+        height: 2rem;
+        width: 2rem;
     }
 }

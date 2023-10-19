@@ -3,7 +3,7 @@ import avatar from '../../../assets/avatar.png';
 const Intro = () => {
     return (
         <div className="intro-container">
-            <img src={avatar} alt="" className='avatar' />
+            <img src={avatar} alt="avatar" className='avatar' />
             <div className="desc">
                 <p className='title'>Hey, Nice to <span>MEET</span> you!</p>
                 <p>I'm a third year university student <span>passionate</span> about everything in <span>Web Development</span>!</p>
