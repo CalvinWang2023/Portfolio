@@ -1,0 +1,75 @@
+.navbar-mobile {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    background-color: #01051a;
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.983);
+}
+
+.navbar-mobile .site-icon {
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fb6087;
+    letter-spacing: 1.2px;  
+    width: 90%;
+}
+.navbar-mobile .site-icon h1 {
+    transition: .3s;
+    font-weight: 400;
+    font-size: 2rem;
+}
+.navbar-mobile .site-icon :is(svg) {
+    width: 2rem;
+    height: 2rem;
+}
+
+.navbar-mobile .menu-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+    animation: expandMenu 0.5s forwards; /* Keyframes animation */
+}
+
+@keyframes expandMenu {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0.2;
+    }
+    40% {
+        opacity: 0.4;
+    }
+    60% {
+        opacity: 0.6;
+    }
+    80% {
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.navbar-mobile .menu-list button {
+    font-size: 1.25rem;
+}
+
+.expand {
+    cursor: pointer;
+    transition: transform 0.3s; /* Adjust the duration as needed */
+}
+
+.expanded {
+    transform: rotate(90deg);
+}

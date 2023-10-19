@@ -13,7 +13,7 @@
     transition: 0.5s ease-in-out;
 }
 
-.nav-fixed {
+.navbar-desktop.nav-fixed {
     background-color: #01051a45;
     box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.983);
 }
@@ -57,15 +57,15 @@
     height: 5.5px;
 }
 
-.navbar-desktop .menu-list .nav-option .clicked {
+.menu-list .nav-option .clicked {
     width: 80%;
 }
 
-.navbar-desktop .menu-list .nav-option #button-clicked {
+.menu-list .nav-option #button-clicked {
     color: #fb6087;
 }
 
-.navbar-desktop .menu-list .nav-option button {
+.menu-list .nav-option button {
     background: transparent;
     border: none;
     font-size: 1rem;
@@ -78,7 +78,7 @@
     cursor: pointer;
 }
 
-.navbar-desktop .menu-list .nav-option:hover .hl {
+.menu-list .nav-option:hover .hl {
     width: 80%;
 }
 

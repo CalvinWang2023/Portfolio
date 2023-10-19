@@ -4,10 +4,10 @@ import Layout from './Layout';
 import Home from './components/Home/Home';
 import Projects from './components/Projects/Projects';
 import Resume from './components/Resume/Resume';
-import NavbarDesktop from './components/Navbar/NavbarDesktop/NavbarDesktop';
 import About from './components/About/About';
 import Footer from './components/Footer/Footer';
 import { useEffect } from 'react';
+import Navbar from './components/Navbar/Navbar';
 
 function App() {
 	const location = useLocation();
@@ -18,7 +18,7 @@ function App() {
   
 	return (
 		<div className="App">
-			<NavbarDesktop />
+			<Navbar />
 			<Routes>
 				<Route path='/' element={ <Layout /> }> 	
 					<Route index element={ <Home /> } />	
