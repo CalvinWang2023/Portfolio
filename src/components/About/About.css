@@ -68,3 +68,35 @@
     width: 5rem;
     height: 5rem;
 }
+
+@media (max-width: 1150px) {
+    .about-container {
+        margin: 7rem 1rem;
+    }
+    .about-container .hero-container .title {
+        text-align: center;
+        font-size: 2.2rem;
+    }
+    .about-container .hero-container .intro-text {
+        width: 95%;
+        text-align: center;
+        font-size: 1rem;
+    }
+    .about-container .hero-container .intro {
+        flex-direction: column;
+    }
+    .about-container .hero-container .intro img  {
+        width: 80%;
+        height: 80%;
+        margin-top: 3rem;
+    }
+    .about-container .techset-container .title {
+        font-size: 1.4rem;
+        color: white;
+    }
+    .about-container .techset-container .techset {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 1rem;
+    }
+}
