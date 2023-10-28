@@ -29,10 +29,6 @@
     font-weight: 400;
 }
 
-.navbar-desktop .site-icon h1:hover {
-    transform: scale(1.1);
-}
-
 .navbar-desktop .menu-list {
     display: flex;
     flex-direction: row;
@@ -82,10 +78,6 @@
     cursor: pointer;
 }
 
-.navbar-desktop .menu-list .nav-option:hover .hl {
-    width: 80%;
-}
-
 @media (max-width: 950px) {
     .navbar-desktop .menu-list {
         width: 60%;
@@ -95,5 +87,14 @@
     }
     .navbar-desktop .site-icon h1 {
         font-size: 1.8rem;
+    }
+}
+
+@media (hover: hover) {
+    .navbar-desktop .menu-list .nav-option:hover .hl {
+        width: 80%;
+    }
+    .navbar-desktop .site-icon h1:hover {
+        transform: scale(1.1);
     }
 }

@@ -41,9 +41,6 @@
 
     transition: 0.8s;
 }
-.project-container .project-section .project:hover {
-    transform: scale(1.1);
-}
 .project-container .project-section .project .techs {
     display: flex;
     align-items: center;
@@ -75,9 +72,7 @@
     color: white;
     transition: 0.5s;
 }
-.project-container .project-section .project .buttons a:hover {
-    background-color: #fb6087;
-}
+
 .project-container .project-section .project .buttons :is(svg) {
     width: 28px;
     height: 28px;
@@ -98,5 +93,14 @@
     }
     .project-container .project-section .project {
         width: 370px;
+    }
+}
+
+@media (hover: hover) {
+    .project-container .project-section .project .buttons a:hover {
+        background-color: #fb6087;
+    }
+    .project-container .project-section .project:hover {
+        transform: scale(1.1);
     }
 }
