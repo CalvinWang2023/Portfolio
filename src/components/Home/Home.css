@@ -194,7 +194,7 @@
     font-weight: 600;
 }
 .home-container .contact-container .contact-button {
-    background-color: rgb(43, 80, 122);
+    background-color: #c3375a;
     border-radius: 12px;
     padding: 0.6rem;
     font-size: 1.9rem;
@@ -404,7 +404,7 @@
         background-color: #fb6087;
     } 
     .home-container .contact-container .contact-button:hover {
-        background-color: rgb(117, 163, 216);
+        background-color: #fb6087;
     }
     .home-container .logo-container :is(svg):hover {
         color: rgb(117, 163, 216);

@@ -22,8 +22,8 @@ const Projects = () => {
 				/>
 				<ProjectCard
 					imgPath={kanbanBoard}
-					title='Kanban Board'
-					description='A Kanban board serves as a useful instrument for overseeing tasks on an individual or group level. It provides a visual representation of work as it progresses through different phases of a workflow. This is achieved by using cards to symbolize individual tasks and columns to represent the various steps within the process.'
+					title='Kanban Tasks Manager'
+					description='Kanban tasks manager serves as a useful instrument for overseeing tasks on an individual or group level. It provides a visual representation of work as it progresses through different phases of a workflow. This is achieved by using cards to symbolize individual tasks and columns to represent the various steps within the process.'
 					techs={['React', 'Javascript', 'Redux', 'Vite']} 
 					githubLink={'https://github.com/CalvinWang2023/Kanban-Task-Manager'} 
 					websiteLink={'https://kanban-tasks-manager-app.netlify.app/'}				
