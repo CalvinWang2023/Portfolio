@@ -56,8 +56,7 @@ const Projects = () => {
 					title='Personal Portfolio'
 					description='Here is my personal portfolio, a platform where I demonstrate my proficiency and knowledge in the field of computer science.'
 					techs={['React', 'React-Router', 'Typescript', 'Vite']} 
-					githubLink={'https://github.com/CalvinWang2023/Portfolio'} 
-					websiteLink={'https://brainpulse.netlify.app/'}				
+					githubLink={'https://github.com/CalvinWang2023/Portfolio'} 		
 				/>
 			</div>
 		</div>
