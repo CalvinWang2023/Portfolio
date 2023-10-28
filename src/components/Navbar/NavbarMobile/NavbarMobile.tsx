@@ -1,18 +1,15 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
 import './NavbarMobile.css';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { AiOutlineClose } from 'react-icons/ai';
 
-const navigationItems = [
-	{ id: '0', text: 'Home', path: '/' },
-	{ id: '1', text: 'About', path: '/about' },
-	{ id: '2', text: 'Projects', path: '/projects' },
-	{ id: '3', text: 'Resume', path: '/resume' },
-];
+interface NavigationItems {
+	navigationItems: NavigationItem[];
+}
 
-const NavbarMobile = () => {
+const NavbarMobile: React.FC<NavigationItems> = ({ navigationItems }) => {
     const location = useLocation();
 	const [scrolled, updateNavbar] = useState(false);
     const [expand, setExpand] = useState(false);
@@ -51,6 +48,7 @@ const NavbarMobile = () => {
 						<div className="nav-option" onClick={() => setExpand(false)}>
 							<div className={activeItemId === item.id ? 'hl clicked' : 'hl'} style={hoverColor}></div>
 							<button id={activeItemId === item.id ? 'button-clicked' : ''}>
+								{item.image}
 								{item.text}
 							</button>
 						</div>

@@ -74,6 +74,10 @@
     font-weight: 700;
     letter-spacing: 1.2px;
 
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
     transition: .3s;
     cursor: pointer;
 }
@@ -82,7 +86,7 @@
     width: 80%;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 950px) {
     .navbar-desktop .menu-list {
         width: 60%;
     }
