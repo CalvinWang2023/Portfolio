@@ -57,11 +57,11 @@
     height: 5.5px;
 }
 
-.menu-list .nav-option .clicked {
+.navbar-desktop .menu-list .nav-option .clicked {
     width: 80%;
 }
 
-.menu-list .nav-option #button-clicked {
+.navbar-desktop .menu-list .nav-option #button-clicked {
     color: #fb6087;
 }
 
@@ -78,7 +78,7 @@
     cursor: pointer;
 }
 
-.menu-list .nav-option:hover .hl {
+.navbar-desktop .menu-list .nav-option:hover .hl {
     width: 80%;
 }
 

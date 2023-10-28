@@ -29,3 +29,58 @@
     background-color: #fb6087;
     border-radius: 12px;
 }
+
+
+ /* Intro Section */
+ .intro-section {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    background-color: black;
+    z-index: 1000;
+    animation: hidden 1s 5s forwards;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ /* Typewriter */
+ .typewriter {
+    font-size: 20px;
+    text-align: left;
+    white-space: nowrap;
+    width: 0;
+    margin: 0 auto;
+    overflow: hidden;
+    border-right: 0.1em solid;
+    color: #fb6087;
+    animation: typing 2.2s 1s steps(40, end) forwards,
+       caret 0.75s step-end infinite;
+ }
+ @keyframes typing {
+    0% {
+       width: 0;
+       opacity: 0;
+    }
+    50% {
+       opacity: 1;
+    }
+    100% {
+       width: 275px;
+    }
+ }
+ @keyframes caret {
+    0%,
+    100% {
+       border-color: transparent;
+    }
+    50% {
+       border-color: #fb6087;
+    }
+ }
+ @keyframes hidden {
+    100% {
+       opacity: 0;
+    }
+ }
