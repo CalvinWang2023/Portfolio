@@ -1,8 +1,3 @@
-import {
-    AiFillGithub,
-    AiFillLinkedin,
-} from "react-icons/ai";
-
 const Contact = () => {
     return (
         <div id='contact' className="contact-container">
@@ -17,14 +12,6 @@ const Contact = () => {
             </div>
             <div className="contact-button">
                 <a href="mailto:wang146@mcmaster.ca">Hello!</a>
-            </div>
-            <div className="logo-container">
-                <a href="https://github.com/CalvinWang2023" target='_blank' className='github'>
-                    <AiFillGithub />
-                </a>
-                <a href="https://www.linkedin.com/in/yanchun-wang-736433289/" target='_blank' className='linkedin'>
-                    <AiFillLinkedin />
-                </a>
             </div>
         </div>
     )

@@ -34,9 +34,7 @@
     height: 2rem;
     width: 2rem;
 }
-.footer-container .logo-container :is(svg):hover {
-    color: rgb(117, 163, 216);
-}
+
 
 @media (max-width: 950px) { 
     .text-container, .copyright-container {
@@ -71,5 +69,7 @@
 }
 
 @media (hover: hover) {
-
+    .footer-container .logo-container :is(svg):hover {
+        color: rgb(117, 163, 216);
+    }
 }
